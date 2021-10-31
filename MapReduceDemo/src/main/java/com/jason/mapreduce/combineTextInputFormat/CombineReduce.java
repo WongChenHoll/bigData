@@ -1,4 +1,4 @@
-package com.jason.mapreduce.testcombine;
+package com.jason.mapreduce.combineTextInputFormat;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;

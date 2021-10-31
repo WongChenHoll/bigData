@@ -1,4 +1,4 @@
-package com.jason.mapreduce.testcombine;
+package com.jason.mapreduce.combineTextInputFormat;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -12,7 +12,8 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import java.io.IOException;
 
 /**
- * 单词统计Driver类
+ * 单词统计Driver类。
+ * 一次读取多个文件。
  *
  * @author WangChenHol
  * @date 2021-10-22 16:10

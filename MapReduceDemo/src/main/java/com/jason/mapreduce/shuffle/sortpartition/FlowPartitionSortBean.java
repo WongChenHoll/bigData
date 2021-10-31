@@ -1,4 +1,4 @@
-package com.jason.mapreduce.shuffle.writerablecomparable;
+package com.jason.mapreduce.shuffle.sortpartition;
 
 import org.apache.hadoop.io.WritableComparable;
 
@@ -12,13 +12,13 @@ import java.io.IOException;
  * @author WangChenHol
  * @date 2021-10-30 11:57
  **/
-public class FlowSortBean implements WritableComparable<FlowSortBean> {
+public class FlowPartitionSortBean implements WritableComparable<FlowPartitionSortBean> {
     private Long upFlow; //上行流量
     private Long downFlow; // 下行流量
     private Long countFlow; // 总流量
 
     @Override
-    public int compareTo(FlowSortBean o) {
+    public int compareTo(FlowPartitionSortBean o) {
         // 总流量倒序
         if (this.countFlow > o.countFlow) {
             return -1;
